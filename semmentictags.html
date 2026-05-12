@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;}
+        header{
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;}
+        nav{
+            background-color: #444;
+            padding: 10px;
+            text-align: center;}
+        nav a{
+            color: rgb(82, 158, 112);
+            text-decoration: none;
+            margin: 15px;}
+        .container{
+            padding: 20px;
+        }
+        article{
+            background-color: rgb(154, 222, 155);
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 10px;}
+        aside{
+            background-color: rgb(144, 200, 228);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1> This is our User Registration Form</h1>
+        <br><br>
+    <nav>
+        <a href="https://www.bing.com/search?q=google.com&form=ANNTH1&refig=6a02c47838c7416e83a107d00b55a00b&pc=U531&ucpdpc=UCPD&pq=google&pqlth=6&assgl=10&sgcn=google.com&qs=HS&sgtpv=HS&smvpcn=0&swbcn=8&sctcn=0&sc=8-6&sp=1&ghc=0&cvid=6a02c47838c7416e83a107d00b55a00b&clckatsg=1&hsmssg=0">Home</a>
+        <a href="#submit">Register</a>
+        <a href="#Image">Image</a>
+        <a href="#Footer">Footer</a>
+    </nav>
+    </header>
+    <div class="container">
+        <article>
+            <section>
+                <form  action="/submit-form" method="POST">
+                    <label>Full Name:</label><br>
+                    <input type = "text" name = "name" id = "name" placeholder="Enter your Full name" required><br><br>
+                    <label>Number:</label><br>
+                    <input type = "tel" name = "number" id = "number" placeholder="Enter your Phone Number" required><br><br>
+                    <label>Email Address:</label><br>
+                    <input type = "email" name = "email" id = "email" placeholder="Enter your valid email Address" required><br><br>
+                    <label>Enter Password:</label><br>
+                    <input type = "password" name = "password" id = "pass" placeholder="Enter atleast 8 characters" required><br><br>
+                    <label>DOB:</label><br>
+                    <input type = "date" name = "dt" id = "dt" placeholder="ENter your date of birth" required><br><br>
+                    <p>
+                        <label>Gender:</label><br>
+                        <input type ="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type ="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                        <input type ="radio" name="gender" id="other" value="other"><label for="other">Other</label><br><br>
+                    </p>
+                    <label>Course:</label><br>
+                    <select name="course"><br><br>
+                        <option value="">Select course</option>
+                        <option>Computer Science</option>
+                        <option>Mathematics</option>
+                        <option>Biology</option>
+                    </select><br><br>
+                    <label>Skill Level:</label><br>
+                    <input type="range" name = "range" id = "range" required><br><br>
+                    <label>Remember Me:</label>
+                    <input type = "checkbox" name = "dt" id = "dt" placeholder="ENter your date of birth" required><br><br>
+                    <button id="submit" type="submit">Register</button>
+                </form>
+            </section>
+        </article>
+    <aside>
+        <label>Photo:</label><br>
+        <input type="image" src="wallpaperflare.com_wallpaper (10).jpg" width="500" id="Image"<br><br>
+    </aside>
+    </div>
+    <footer>
+        <h3 id="Footer">Created By Rajai Raj</h3>
+    </footer>
+</body>
+</html>

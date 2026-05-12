@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="/submit-form" method="POST">
+        <label>Full Name:</label><br>
+        <input type = "text" name = "name" id = "name" placeholder="Enter your Full name" required><br><br>
+        <label>Number:</label><br>
+        <input type = "tel" name = "number" id = "number" placeholder="Enter your Phone Number" required><br><br>
+        <label>Email Address:</label><br>
+        <input type = "email" name = "email" id = "email" placeholder="Enter your valid email Address" required><br><br>
+        <label>Enter Password:</label><br>
+        <input type = "password" name = "password" id = "pass" placeholder="Enter atleast 8 characters" required><br><br>
+        <label>DOB:</label><br>
+        <input type = "date" name = "dt" id = "dt" placeholder="ENter your date of birth" required><br><br>
+        <p>
+            <label>Gender:</label><br>
+            <input type ="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type ="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type ="radio" name="gender" id="other" value="other"><label for="other">Other</label><br><br>
+        </p>
+        <label>Course:</label><br>
+        <select name="course"><br><br>
+            <option value="">Select course</option>
+            <option>Computer Science</option>
+            <option>Mathematics</option>
+            <option>Biology</option>
+        </select><br><br>
+        <label>Skill Level:</label><br>
+        <input type="range" name = "range" id = "range" required><br><br>
+        <label>Remember Me:</label>
+        <input type = "checkbox" name = "dt" id = "dt" placeholder="ENter your date of birth" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
